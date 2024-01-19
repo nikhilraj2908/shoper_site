@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       
+        .lower{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        select{
+            border: none;
+        }
+        .upper{
+            display: flex;
+            justify-content:space-between;
+            padding:10px;
+            background-color: #f2f2f2;
+            margin-left: 10px;
+            margin-right:10px;
+            align-items: center;
+        }
+    .head{
+        margin-right: 20px;
+    }
+    .subhead{
+        margin-right: 20px;
+    }
+    nav span{
+        margin-right: 10px;  
+        font-size: 15px;  
+        color: gray;
+    }
+    div span{
+        margin-right: 10px;  
+        font-size: 20px;  
+    }
+    .shopper{
+        font: bold;
+        font-size: 30px;
+    }
+    menu-bar{
+        margin-right: 10px;
+    }
+    .container{
+        display: flex;
+        margin-top: 30px;
+    }
+    .card1{
+        background-image:url(/public/men.jpg) ;
+        height: 500px;
+        width: 33.33%;
+    
+    }
+    .card2{
+        background-image:url(/public/women.jpg) ;
+        height: 500px;
+        width: 33.33%;
+       background-size:cover ;
+       }
+    .card3{
+        background-image:url(/public/kids.jpg) ;
+        height: 500px;
+        width: 33.33%;
+    }
+    .card9{
+        background-image: url(/public/sendle2.jpg);
+        background-size: cover;
+        height: 500px;
+       margin-left: 30px;
+       margin-right:30px;
+    }
+    .box{
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+    }
+.box2{
+    justify-content: center;
+   align-items: center;
+   height: 400px;
+   display: grid;
+}
+.box3{
+    /* justify-content: center; */
+    align-items: center;
+    display: grid;
+    width: 30%;
+    margin-left: 800px;
+}
+.timer{
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+    font: bold;
+}
+    h1{
+      font-size: 40px;
+      color: white;
+      text-shadow: 3px 2px 2px black;  
+      margin-left: 10px;
+    }
+    button{
+        font-size: 20px;
+        padding: 10px;
+        /* text-shadow: 2px 2px 2px gray; */
+        margin-right: 20px;
+    }
+    nav{
+        display: flex;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-left: 100px;
+        margin-right: 100px;
+        justify-content: space-between;
+        padding:20px;
+        border-bottom: 1px solid black;
+    }
+    .card4{
+        background-image: url(/public/bag.jpg);
+        height: 400px;
+        width: 80%;
+        background-size: cover;
+        margin-left: 100px;
+    }
+    .card6{
+        background-image: url(/public/printed-tshirts.jpg);
+        height: 400px;
+        width: 90%;
+        background-size: cover;
+        margin-right: 200px;
+    }
+    .card5{
+        background-image: url(/public/product-3.jpg);
+        height: 400px;
+        width: 90%;
+        background-size: cover;
+        margin-left: 100px;
+    }
+    .card7{
+        background-image: url(/public/product-4.jpg);
+        height: 400px;
+        width: 80%;
+        background-size: cover;
+        margin-left: 20px;
+        margin-right: 100px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: red;
+    }
+    .card8{
+        height: 400px;
+        width: 300px;
+        background-size: cover;
+    }
+    input{
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="upper">
+            <span>
+                <span class="bi bi-truck"></span>
+                <span class="head" style="font-size: 15px;"> FREE DILEVERY WORLDWIDE</span>
+                <span>
+                    <SELECT> 
+                        <option>UNITED STATES</option>
+                        <option>INDIA</option>
+                        <option>PAKISTAN</option>
+                    </SELECT>
+                </span>  
+                <span>
+                    <select>
+                        <option>USD</option>
+                        <option>INR</option>
+                    </select>
+                </span>
+                <span>
+                    
+                     <select>
+                        <option>HINDI</option>
+                        <option>TAMIL</option>
+                    </select>
+                </span> 
+            </span>
+            <span class="subhead">
+                <span > Shopping </span>
+                <span > Contact </span>
+                <span > FAQs </span>
+            </span>
+            <aside style="color: gray;">
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter"></span>
+            </aside>
+        </div>
+    
+        <div class="lower">
+            <div>
+                <span class="shopper">shopper</span>
+            </div>
+            <div class="menu-bar">
+                <span>Home</span>
+                <span>menu</span>
+                <span>shop</span>
+                <span>categiries</span>
+                <span>men</span>
+                <span>women</span>
+            </div>
+            <div>
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-house-fill"></span>
+                <span class="bi bi-heart"></span>
+            </div>
+        </div>
+        <div style="background-color: black; color: white; text-align: center; padding: 10px;">⚡️ HAPPY HOLIDAY DEALS ON EVERYTHING ⚡️</div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="card1">
+                <div class="box"><h1>MEN</h1> <br><a href="./table.html"><button>Shop Now</button></a></div>
+            </div>
+            <div class="card2">
+                <div class="box"><h1>WOMEN</h1><button >shop Now</button></div>
+            </div>
+            <div class="card3">
+                <div class="box"><h1>KID</h1><button >shop Now</button></div></div>
+            </div>
+        </div>
+       <nav>
+        <span>
+            <span class="bi bi-truck" style="font-size: 20px; color: black;">Free shipping</span>
+            <div>For all orders above $200</div>
+        </span>
+        <span>
+            <span class="bi bi-arrow-left-right" style="font-size: 20px; color: black; ">Free Return</span>
+            <div>For all the product</div>
+        </span>
+        <span>
+            <span class="bi bi-lock" style="font-size: 20px; color: black; ">Sequre shopping</span>
+            <div>Secure and safe tranjections</div>
+        </span>
+        <span>
+            <span class="bi bi-tag" style="font-size: 20px; color: black; ">Over 10000 styles</span>
+            <div>we have all what you don't have</div>
+        </span>
+        </nav>
+        <div class="centerhead" style=" text-align: center; padding: 20px;">
+            <p style="color: gray;"> NEW COLLECTION</p>
+            <h2>Best Picks 2019</h2>
+            <p style="font-size: 20px; color: gray;">Appear, dry there darkness they're seas, dry waters thing fly midst. Beast,<br>
+            above fly brought Very green.</p>
+        </div>
+        <div class="container1" style="display: grid; grid-template-columns: 3fr 5fr;margin-bottom: 30px;">
+            <span class="card4">
+                <div class="box2"><h2 style="font-size: 40px; color: white; text-shadow:2px 2px 2px black;">begs collection</h2></div>
+            </span>
+            <span class="card6">
+                <div class="box2"><h2 style="font-size: 40px; color: white; text-shadow:2px 2px 2px black;">printed men shirts</h2></div>
+            </span>
+        </div>
+        <div class="container2" style="display: grid; grid-template-columns: 5fr 3fr;">
+            <span class="card5">
+                <div class="box2"><h2 style="font-size: 40px; color: white; text-shadow:2px 2px 2px black;">Normal women cloths</h2></div>
+            </span>
+            <span class="card7">
+                <div class="box2"><h2 style="font-size: 40px; color: white; text-shadow:2px 2px 2px black;">New shose</h2></div>
+            </span>
+        </div>
+        <div class="centerhead" style="text-align: center; padding: 40px;">
+            <h2> Top Month Sellers</h2>
+            <div class="underline" >
+                <a href="/public/women.jpg" style="margin-right:10px ;">Women</a>
+                <a href="/public/men.jpg" style="margin-right:10px ;">Men</a>
+                <a href="/public/kids.jpg"style="margin-right:10px ;">Kids</a>
+            </div>
+        </div>
+        <div class="container2"  style="flex-wrap: wrap; display: flex; justify-content: center; margin-left: 50px; margin-right: 50px;">
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/sendle.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/nighty.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/shose.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/sendle.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/sendle.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/shirt.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/sendle.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+            <div class="card8" style="height:400px; width: 250px; padding:20px">
+                <img src="/public/sendle.jpg" style="background-size: cover; height: 300px; width: 100%;">
+                <div>Shoes<br>Leather mid-heel Sandals<br>$129.00</div>
+            </div>
+        </div>
+        <div style="text-align: center; padding: 20px;"><box style="border-bottom: 1px solid black;">Discover More</box></div>
+        <div class="container3">
+            <div class="card9">
+                <div class="box3" >
+                    <div class="timer">Get -50% from <br> Summer Collection<h4>945:34:15:40</h4></p><br></div>
+                </div>
+                <button style="margin-left: 900px;">Show more</button>
+            </div>
+        </div>
+        <div style="text-align: center; padding: 20px;">
+            <p style="color: gray;">WHAT BUYERS SAY</p>
+            <h2>Latest buyers Reviews</h2>
+        </div>
+        <div class="container" style="display: flex; justify-content: center; padding-bottom: 20px;">
+            <div class="card10" style="border: 1px solid black; height: 250px; width: 290px;">
+                <div style="display: flex;">
+                    <span > <img src="/public/amazon-rewards-4.jpg" style="width: 70px; height:70px; padding: 10px;"></span>
+                    <span><p style="color:gray; font-size: 15px; margin-bottom: 2px;">Bags & Accessories</p><div >Suede cross body bag</div>
+                    <div style="color:gold">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                    </span>
+                </div>
+                <div>
+                    <p style="padding:10px;">God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars.<br> Pavel Doe, 27th may 2019</p>
+                </div>
+            </div>
+            <div class="card10" style="border: 1px solid black; height: 250px; width: 290px; padding-left:20px ; margin-left: 20px; ">
+                <div style="display: flex;">
+                    <span > <img src="/public/amazon-rewards-4.jpg" style="width: 70px; height:70px; padding: 10px;"></span>
+                    <span><p style="color:gray; font-size: 15px; margin-bottom: 2px;">Bags & Accessories</p><div >Suede cross body bag</div>
+                    <div style="color:gold">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                    </span>
+                </div>
+                <div>
+                    <p style="padding:10px;">God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars.<br>Pavel Doe, 27th may 2019</p>
+                </div>
+            </div>
+            <div class="card10" style="border: 1px solid black; height: 250px; width: 290px; margin-left: 20px; ">
+                <div style="display: flex;">
+                    <span > <img src="/public/amazon-rewards-4.jpg" style="width: 70px; height:70px; padding: 10px;"></span>
+                    <span><p style="color:gray; font-size: 15px; margin-bottom: 2px;">Bags & Accessories</p><div >Suede cross body bag</div>
+                    <div style="color:gold;">
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                        <span class="bi bi-star-fill"></span>
+                    </div>
+                    </span>
+                </div>
+                <div>
+                    <p style="padding:10px;">God every fill great replenish darkness unto. Very open. Likeness their that light. Given under image to. Subdue of shall cattle day fish form saw spirit and given stars.<br>Pavel Doe, 27th may 2019</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h2> @shopper</h2>
+            <p>Appear, dry there darkness they're seas, dry waters.</p>
+        </div>
+    </section>
+    <footer style="display: grid; grid-template-rows: 1fr 2fr; height: 350px;background-color: black; color: white;  padding: 20px;">
+        <form style="text-align: center; padding-bottom: 20px;">
+            <h4 style="font-size: 25px;">Want style Ideas and Treats?</h4>
+            <input type="email" placeholder="enter your mail ID" ><button>Submit</button>
+        </form>
+        <div style="display: grid; grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;">
+            <div>
+                <div style="font-size: 30px; font: bold; padding-bottom: 15px;">Shopper.</div>
+                <div>
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-linkedin"></span>
+                    <span class="bi bi-twitter"></span>
+                </div>
+            </div>
+            <div>
+                <h4>  SUPPORT</h4>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+            <div>
+                <h4>  SUPPORT</h4>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+            <div>
+                <h4>  SUPPORT</h4>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+            <div>
+                <h4>  SUPPORT</h4>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
